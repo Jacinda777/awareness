@@ -1,0 +1,398 @@
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #0a0f24;
+color: white;
+}
+header {
+background: #111c44;
+padding: 15px;
+text-align: center;
+position: sticky;
+top: 0;
+z-index: 1000;
+}
+
+h1{
+font-size: 36px;
+color: #fff;
+}
+
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 5px 50px;
+}
+.logo {
+font-size: 24px;
+font-weight: bold;
+color: #1e90ff;
+}
+nav ul {
+list-style: none;
+display: flex;
+gap: 20px;
+}
+nav ul li a {
+color: white;
+text-decoration: none;
+font-size: 20px;
+}
+.hero {
+text-align: center;
+padding: 100px 20px;
+background: linear-gradient(135deg, #1a2e63, #0a0f24);
+}
+.hero h1 {
+font-size: 36px;
+}
+.hero p {
+font-size: 18px;
+margin: 10px 0;
+}
+.btn {
+padding: 10px 20px;
+background: #1e90ff;
+border: none;
+color: #0a0f24;
+font-weight: bold;
+cursor: pointer;
+border-radius: 5px;
+}
+.section {
+padding: 50px 20px;
+text-align: center;
+}
+
+h1, h3 {
+      text-align: center;
+      color: #fff;
+    }
+
+    .flip-box-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      padding: 30px;
+    }
+
+    .flip-box {
+      background-color: transparent;
+      width: 20vw;
+      height: 40vh;
+      perspective: 1000px;
+    }
+
+    .flip-box-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+    .flip-box:hover .flip-box-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-box-front, .flip-box-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .flip-box-front {
+      background-color: #111c44;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .flip-box-front img {
+      width: 100%;
+      height: 90%;
+      object-fit: cover;
+    }
+
+    .flip-box-front h3 {
+      margin: 10px 0;
+    }
+
+    .flip-box-back {
+      background-color: #1a2e63;
+      color: white;
+      transform: rotateY(180deg);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .flip-box-back ul {
+      list-style: none;
+      padding: 0;
+      text-align: left;
+    }
+
+    .flip-box-back li {
+      margin-bottom: 10px;
+      font-size: 0.9em;
+    }
+
+.contact {
+background: #1a2e63;
+padding: 50px;
+text-align: center;
+}
+.contact .cards-container {
+display: flex;
+justify-content: center;
+gap: 20px;
+flex-wrap: wrap;
+}
+.contact .card {
+background: #111c44;
+padding: 20px;
+border-radius: 10px;
+width: 250px;
+text-align: center;
+}
+
+.quiz {
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+padding: 50px 20px;
+text-align: center;
+}
+
+.quiz-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+
+.quiz-card {
+background-color: #111c44;
+border-radius: 20px;
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+padding: 30px;
+width: 100%;
+}
+
+.quiz-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 20px;
+}
+
+.quiz-header h2 {
+color: #fff;
+font-size: 14px;
+text-transform: uppercase;
+font-weight: bold;
+}
+
+.skip-btn {
+background: none;
+border: none;
+color: #fff;
+font-size: 14px;
+cursor: pointer;
+}
+
+.progress-bar {
+background-color: #eee;
+border-radius: 10px;
+height: 5px;
+width: 100%;
+margin: 10px 0 20px;
+}
+
+.progress {
+background-color: #1e90ff;
+border-radius: 10px;
+height: 100%;
+width: 50%;
+transition: width 0.3s ease;
+}
+
+.quiz-question {
+color: #fff;
+font-size: 20px;
+margin-bottom: 20px;
+}
+
+.quiz-options {
+display: flex;
+flex-direction: column;
+gap: 10px;
+margin-bottom: 20px;
+}
+
+.option {
+background-color: #f9f9f9;
+border: 2px solid #ddd;
+border-radius: 10px;
+padding: 10px;
+cursor: pointer;
+display: flex;
+align-items: center;
+transition: all 0.3s ease;
+}
+
+.option:hover {
+background-color: #f1f1f1;
+}
+
+.option input {
+display: none;
+}
+
+.option-text {
+color: #555;
+font-size: 16px;
+}
+
+.option input:checked + .option-text {
+color: #1e90ff;
+font-weight: bold;
+}
+
+.next-btn {
+background-color: #1e90ff;
+color: #fff;
+border: none;
+border-radius: 10px;
+padding: 10px;
+cursor: pointer;
+font-size: 16px;
+width: 100%;
+transition: background 0.3s ease;
+}
+
+.next-btn:hover {
+background-color: #1c86ee;
+}
+
+.news {
+padding: 50px 20px;
+text-align: center;
+background: #0a0f24;
+color: white;
+}
+.news h1 {
+font-size: 36px;
+color: #fff;
+margin-bottom: 30px;
+}
+.news-container {
+display: flex;
+justify-content: center;
+gap: 20px;
+flex-wrap: wrap;
+}
+.news-card {
+background: #111c44;
+padding: 20px;
+border-radius: 10px;
+width: 300px;
+text-align: left;
+color: white;
+box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+transition: transform 0.3s;
+}
+.news-card:hover {
+transform: translateY(-10px);
+}
+.news-card h3 {
+font-size: 22px;
+color: white;
+}
+.news-date {
+font-size: 14px;
+color: #bbb;
+margin: 5px 0;
+}
+.read-more {
+display: inline-block;
+padding: 10px 15px;
+background: #1e90ff;
+color: #0a0f24;
+border: none;
+border-radius: 5px;
+text-decoration: none;
+font-weight: bold;
+cursor: pointer;
+transition: background 0.3s;
+}
+.read-more:hover {
+background: #00e5ff;
+}
+
+.gallery {
+    width: 75%; 
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px;
+    padding: 20px;
+    perspective: 1000px;
+} 
+
+.gallery div {
+    background: rgba(255, 255, 255, 0.1); 
+    border-radius: 20px; 
+    transition: transform 0.5s, box-shadow 0.5s; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+    backdrop-filter: blur(10px); 
+    overflow: hidden;
+}
+
+.gallery div:hover {
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3); 
+}
+
+.gallery div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.5s;
+}
+
+.gallery div:hover img {
+    transform: scale(1.5);
+}
+
+ /* Responsive Design */
+ @media screen and (max-width: 768px) {
+      .flip-box {
+        width: 45%; /* Two cards per row */
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .flip-box {
+        width: 100%; /* One card per row on very small screens */
+      }
+    }

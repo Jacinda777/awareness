@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/favicon.ico">
+    <title>Gallery Page</title>
+    <style>
+    body { 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    margin: 0; 
+    background: linear-gradient(135deg, #1a2e63, #0a0f24); 
+    overflow-y: auto;
+}
+
+.gallery { 
+    width: 100%; 
+    height: 95vh; 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    grid-auto-rows: 1fr; 
+    gap: 15px; 
+    perspective: 1000px; 
+    overflow-y: scroll; 
+    padding: 20px; 
+    box-sizing: border-box; 
+    scrollbar-width: none;
+        }
+
+        .gallery::-webkit-scrollbar {
+            display: none; /* Chrome, Safari, and Edge */
+        }
+
+
+        .gallery div { 
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+            backdrop-filter: blur(10px); 
+            width: 30vw; 
+            height: 50vh; 
+            overflow: hidden;
+            border-radius: 15px;
+            transition: transform 0.5s, box-shadow 0.5s; 
+        }
+
+        .gallery div img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+            transition: transform 0.5s;
+        }
+
+        .gallery div:hover img {
+            transform: scale(1.5);
+        }
+
+        .large-circle {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+    backdrop-filter: blur(10px); 
+    width: 95vw; 
+    height: 50vh; 
+    overflow: hidden;
+    border-radius: 15px;
+    transition: transform 0.5s, box-shadow 0.5s;
+    padding: 20px;
+    margin-bottom: 20px;  /* Add space below video */
+}
+
+
+.large-circle video {
+    width: 100%; /* Adjusted to fit within the new width */
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+        .back-button {
+    margin-left: 10px;
+    padding: 10px;
+    background-color:#1e90ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #111c44;
+}
+    
+        
+    </style>
+</head>
+<body>
+    <button onclick="goBack()" class="back-button">Go Back</button>
+    <div class="large-circle">
+        <video src="image/video.mp4" controls autoplay muted loop></video>
+    </div>
+
+    <div class="gallery">
+        <div><img src="image/1.jpg" alt="Image 1"></div>
+        <div><img src="image/2.jpg" alt="Image 2"></div>
+        <div><img src="image/3.jpg" alt="Image 3"></div>
+        <div><img src="image/4.jpg" alt="Image 4"></div>
+        <div><img src="image/5.jpg" alt="Image 5"></div>
+        <div><img src="image/6.jpg" alt="Image 6"></div>
+        <div><img src="image/7.jpg" alt="Image 7"></div>
+        <div><img src="image/8.jpg" alt="Image 8"></div>
+        <div><img src="image/9.jpg" alt="Image 9"></div>
+        <div><img src="image/10.jpg" alt="Image 10"></div>
+        <div><img src="image/11.jpg" alt="Image 11"></div>
+        <div><img src="image/12.jpg" alt="Image 12"></div>
+        <div><img src="image/13.jpg" alt="Image 13"></div>
+        <div><img src="image/14.jpg" alt="Image 14"></div>
+        <div><img src="image/15.jpg" alt="Image 15"></div>
+        <div><img src="image/16.jpg" alt="Image 16"></div>
+        <div><img src="image/17.jpg" alt="Image 17"></div>
+        <div><img src="image/18.jpg" alt="Image 18"></div>
+        <div><img src="image/19.jpg" alt="Image 19"></div>
+        <div><img src="image/20.jpg" alt="Image 20"></div>
+        <div><img src="image/21.jpg" alt="Image 21"></div>
+        <div><img src="image/22.jpg" alt="Image 22"></div>
+        <div><img src="image/23.jpg" alt="Image 23"></div>
+        <div><img src="image/24.jpg" alt="Image 24"></div>
+        <div><img src="image/25.jpg" alt="Image 25"></div>
+    </div>
+    <script>
+        function goBack() {
+    window.history.back();
+}
+
+    </script>
+</body>
+</html>

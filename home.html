@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Awareness</title>
+    <link rel="icon" href="image/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="home.css"> 
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="image/logo.png" alt="Logo" style="width: 10vw; height: 20vh;">
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Tips</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero" id="home">
+        <h1>24/7 Cybersecurity Operation Center</h1>
+        <p>Protecting the digital world, one step at a time.</p>
+        <button class="btn" id="#about" onclick="learnMore()">Get Started</button>
+    </section>
+    
+    <section class="section" id="services">
+        <h1>Security Tips</h1>
+        <p>We are a community-driven initiative focused on educating individuals and businesses about cybersecurity threats and best practices.</p>
+        <div class="flip-box-container">
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src="image/password.jpg" alt="Secured Password">
+                  <h3>Password Security</h3>
+                </div>
+                <div class="flip-box-back">
+                  <ol>
+                    <li style="font-size: 20px;">Use complex passwords with upper and lowercase letters, numbers, and symbols.</li>
+                    <li style="font-size: 20px;">Avoid common words and patterns.</li>
+                    <li style="font-size: 20px;">Use unique passwords for each account.</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+        
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src="image/wifi.jpg" alt="Secure Wifi">
+                  <h3>Secured Wifi</h3>
+                </div>
+                <div class="flip-box-back">
+                  <ol>
+                    <li style="font-size: 20px;">Avoid public Wi-Fi or use a VPN.</li>
+                    <li style="font-size: 20px;">Secure home networks with strong passwords and WPA3 encryption.</li>
+                    <li style="font-size: 20px;">Keep router firmware updated.</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+        
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src="image/email.jpg" alt="Email Security">
+                  <h3>Email Security</h3>
+                </div>
+                <div class="flip-box-back">
+                  <ol>
+                    <li style="font-size: 20px;">Be cautious of phishing emails.</li>
+                    <li style="font-size: 20px;">Verify sender identity before responding.</li>
+                    <li style="font-size: 20px;">Don’t access emails on unsecured networks.</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+        
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src="image/social.jpg" alt="Social Engineering">
+                  <h3>Social Engineering</h3>
+                </div>
+                <div class="flip-box-back">
+                  <ol>
+                    <li style="font-size: 20px;">Be wary of unsolicited requests for sensitive information.</li>
+                    <li style="font-size: 20px;">Verify identities before sharing details.</li>
+                    <li style="font-size: 20px;">Avoid oversharing on social media.</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+    </section>
+
+    <section class="news" id="news">
+        <h1>Latest Cybersecurity News</h1>
+        <div class="news-container">
+            <div class="news-card">
+                <h3>Data Breach at Major Tech Company</h3>
+                <p class="news-date">February 20, 2025</p>
+                <p>Millions of user records exposed in a recent data breach. Experts recommend updating passwords immediately.</p>
+                <button class="read-more">Read More</button>
+            </div>
+            <div class="news-card">
+                <h3>New Phishing Scam Targeting Bank Customers</h3>
+                <p class="news-date">February 18, 2025</p>
+                <p>A sophisticated phishing scam is making rounds, posing as legitimate banking notifications.</p>
+                <button class="read-more">Read More</button>
+            </div>
+            <div class="news-card">
+                <h3>Top Security Tips for Remote Workers</h3>
+                <p class="news-date">February 15, 2025</p>
+                <p>Learn how to secure your remote workspace and protect sensitive data from cyber threats.</p>
+                <button class="read-more">Read More</button>
+            </div>
+        </div>
+    </section>
+    
+    <section class="quiz" id="quiz">
+        <h1>Test Your Knowledge</h1>
+        <div class="quiz-container">
+            <div class="quiz-card">
+                <div class="quiz-header">
+                    <h2>QUIZ</h2>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <h3 class="quiz-question">How often do you use paper as a reminder?</h3>
+                <div class="quiz-options">
+                    <label class="option">
+                        <input type="radio" name="answer" value="1">
+                        <span class="option-text">Almost never</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="answer" value="2">
+                        <span class="option-text">Quite often (2 to 3 times a day)</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="answer" value="3">
+                        <span class="option-text">Very often</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="answer" value="4">
+                        <span class="option-text">It's my daily routine</span>
+                    </label>
+                </div>
+                <button class="next-btn">Next</button>
+            </div>
+        </div>        
+    </section>
+    
+    <section style="text-align: center; margin-top: 30px; color: white;">
+        <h2>Unmasking Threats: A Glimpse into Our Cybersecurity Campaign</h2>
+        <p>Discover how we tackle digital threats head-on, one step at a time.</p>
+        <button style="padding: 10px 20px; border: none; border-radius: 5px; background: #1e90ff; color: white; cursor: pointer; transition: background 0.3s;" 
+                onclick="location.href='gallery.html';">Explore More</button>
+    </section>
+
+    <div class="gallery">
+        <div><img src="image/11.jpg" alt="Image 1"></div>
+        <div><img src="image/12.jpg" alt="Image 2"></div>
+        <div><img src="image/13.jpg" alt="Image 3"></div>
+        <div><img src="image/14.jpg" alt="Image 4"></div>
+
+    </div>
+
+    <section class="contact" id="contact">
+        <h1>Contact Us</h1>
+        <div class="cards-container">
+            <div class="card">
+                <p><i class="fa-solid fa-phone"></i> +233 0505110357</p>
+                <p><i class="fa-solid fa-envelope"></i> jbiney777@gmail.com</p>
+                <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/jacinda-biney-210607292" target="_blank" style="color: cyan;">Jacinda Biney</a></p>
+                <p><i class="fa-solid fa-location-dot"></i> UMaT, Tarkwa</p>
+            </div>
+            <div class="card">
+                <p><i class="fa-solid fa-phone"></i> +233 0599485851</p>
+                <p><i class="fa-solid fa-envelope"></i> kofiish45@gmail.com</p>
+                <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/ishmael-afful-179921299?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" style="color: cyan;">Ishmael Afful</a></p>
+                <p><i class="fa-solid fa-location-dot"></i> UMaT, Tarkwa</p>
+            </div>
+        </div>
+    </section> 
+    <footer>
+        
+    </footer>   
+    <script>
+       document.querySelectorAll('nav ul li a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+        // Close the mobile menu if open
+        if (document.querySelector('nav ul').classList.contains('open')) {
+            document.querySelector('nav ul').classList.remove('open');
+        }
+    });
+});
+
+
+        function learnMore() {
+            alert("Cybersecurity is essential in today's digital world. Stay informed and stay safe!");
+        }
+        const questions = [
+        { question: "What is the safest way to create a password?", answers: ["Using your birthdate", "A strong, unique password with symbols", "123456", "Your pet's name"], correct: 1 },
+        { question: "Which of these is a common phishing tactic?", answers: ["Using strong passwords", "Sending fake emails to steal personal info", "Two-factor authentication", "Installing antivirus software"], correct: 1 },
+        { question: "What does HTTPS stand for?", answers: ["Hyper Text Transfer Protocol Secure", "Hyperlink Transfer Protocol Security", "Home Text Transfer Protocol Secure", "Hyper Transfer Text Protocol Secure"], correct: 0 },
+        { question: "Which of the following is a social engineering attack?", answers: ["Phishing", "Brute force attack", "SQL injection", "Cross-site scripting"], correct: 0 },
+        { question: "What is two-factor authentication?", answers: ["Using two passwords", "Verifying identity with two forms of evidence", "Logging in twice", "None of the above"], correct: 1 },
+        { question: "Which software prevents unauthorized access to networks?", answers: ["Antivirus", "Firewall", "Word Processor", "Email Client"], correct: 1 },
+        { question: "What is malware?", answers: ["A type of computer hardware", "Malicious software designed to harm systems", "An email attachment", "A network protocol"], correct: 1 },
+        { question: "Which is a secure way to browse the internet?", answers: ["Using public Wi-Fi without a VPN", "Visiting only HTTPS websites", "Clicking all links in emails", "Sharing passwords online"], correct: 1 },
+        { question: "What is ransomware?", answers: ["A type of firewall", "Malicious software that demands payment", "An antivirus program", "A password manager"], correct: 1 },
+        { question: "Which is a strong password example?", answers: ["password123", "Qw3!tY7&z", "abcde", "12345"], correct: 1 }
+    ];
+
+    let currentQuestion = 0;
+const totalQuestions = questions.length;
+
+function loadQuestion() {
+    const questionContainer = document.querySelector('.quiz-question');
+    const optionsContainer = document.querySelector('.quiz-options');
+    const progressBar = document.querySelector('.progress');
+
+    const current = questions[currentQuestion];
+    questionContainer.textContent = current.question;
+    optionsContainer.innerHTML = '';
+
+    current.answers.forEach((answer, index) => {
+        const option = document.createElement('label');
+        option.classList.add('option');
+        option.innerHTML = `
+            <input type="radio" name="answer" value="${index}">
+            <span class="option-text">${answer}</span>
+        `;
+        optionsContainer.appendChild(option);
+    });
+
+    // Update Progress Bar
+    progressBar.style.width = `${((currentQuestion + 1) / totalQuestions) * 100}%`;
+}
+
+document.querySelector('.next-btn').addEventListener('click', () => {
+    const selectedOption = document.querySelector('input[name="answer"]:checked');
+    if (!selectedOption) {
+        alert('Please select an option.');
+        return;
+    }
+    
+    const answer = parseInt(selectedOption.value);
+    if (answer === questions[currentQuestion].correct) {
+        alert('Correct!');
+    } else {
+        alert('Wrong! The correct answer is ' + questions[currentQuestion].answers[questions[currentQuestion].correct]);
+    }
+
+    currentQuestion++;
+    if (currentQuestion < totalQuestions) {
+        loadQuestion();
+    } else {
+        alert('Quiz Completed!');
+        currentQuestion = 0;
+        loadQuestion();
+    }
+});
+
+// Initialize the first question
+loadQuestion();
+
+function checkAnswer(questionIndex, answerIndex, button) {
+    if (currentQuestions[questionIndex].correct === answerIndex) {
+        button.style.backgroundColor = 'green';
+        score++;
+    } else {
+        button.style.backgroundColor = 'red';
+    }
+    answered++;
+    disableButtons(questionIndex);
+
+    if (answered === currentQuestions.length) {
+        document.getElementById('quiz-result').innerText = `You scored ${score} out of ${currentQuestions.length}.`;
+    }
+}
+
+function disableButtons(questionIndex) {
+    const questionDivs = document.querySelectorAll('#quiz-container > div');
+    const buttons = questionDivs[questionIndex].querySelectorAll('button');
+    buttons.forEach(button => button.disabled = true);
+}
+
+function loadNewQuestions() {
+    loadQuestions();
+    document.getElementById('quiz-result').innerText = '';
+}
+
+window.onload = loadQuestions;
+
+document.addEventListener('DOMContentLoaded', function() {
+    fetchCybersecurityNews();
+});
+
+function fetchCybersecurityNews() {
+    const apiKey = 'YOUR_API_KEY'; // Replace with your actual API key
+    const apiUrl = `https://zylalabs.com/api/3541/cyber+defense+news+api/1.0.0/getLatestNews?apikey=${apiKey}`;
+
+    async function fetchNews() {
+  try {
+    const response = await fetch(apiUrl);
+    const data = await response.json();
+
+    if (data.articles.length > 0) {
+      const newsContainer = document.getElementById('news-container');
+      data.articles.forEach(article => {
+        const newsCard = document.createElement('div');
+        newsCard.classList.add('news-card');
+        newsCard.innerHTML = `
+          <img src="${article.urlToImage || 'https://via.placeholder.com/300x200'}" alt="News Image">
+          <div class="news-content">
+            <h3>${article.title}</h3>
+            <p>${article.description || 'No description available.'}</p>
+            <a href="${article.url}" target="_blank">Read More</a>
+          </div>
+        `;
+        newsContainer.appendChild(newsCard);
+      });
+    } else {
+      console.log('No news found.');
+    }
+  } catch (error) {
+    console.error('Error fetching news:', error);
+  }
+}
+
+document.addEventListener('DOMContentLoaded', fetchNews);
+}
+    </script>
+</body>
+</html>
